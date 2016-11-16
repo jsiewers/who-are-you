@@ -3,6 +3,7 @@ package org.siewers.who_are_you;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView cookieImage = (ImageView) findViewById(R.id.android_cookie_image_view);
         cookieImage.setImageResource(R.drawable.static_qr_code_without_logo);
         TextView eatText = (TextView) findViewById(R.id.status_text_view);
-        TextView buttonText = (TextView) findViewById(R.id.button_view);
-        buttonText.setText("Ready!");
+        Button button = (Button) findViewById(R.id.button_view);
+        button.setText("Ready!");
+        button.setEnabled(false);
+
     }
 }
